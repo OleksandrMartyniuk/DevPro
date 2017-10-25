@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart-summary.component.css']
 })
 export class CartSummaryComponent implements OnInit {
-
   constructor(private cart: CartService) { }
 
   private summary: number;
 
-  ngOnInit() {
+  public ngOnInit(): void {
     this.summary = 0;
     this.cart.onStoreChange.subscribe(this.onCartUpdated.bind(this));
   }

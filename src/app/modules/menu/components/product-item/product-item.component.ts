@@ -16,7 +16,7 @@ export class ProductItemComponent implements OnInit {
 
   private element: HTMLElement;
 
-  ngOnInit() {
+  public ngOnInit() {
     this.element = this.el.nativeElement;
     this.element.addEventListener('dblclick', this.onDbclick.bind(this));
   }
@@ -27,7 +27,6 @@ export class ProductItemComponent implements OnInit {
 
   public onDbclick() {
     this.cart.addToCart(this.prod, 1);
-    console.log(this.cart.getState());
   }
 
 }

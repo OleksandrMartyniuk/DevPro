@@ -9,26 +9,22 @@ import { Product } from '../../../../models/product';
   styleUrls: ['./cart-entry.component.css']
 })
 export class CartEntryComponent implements OnInit {
-
   constructor(private cart: CartService) { }
 
   @Input()
   public entry: CartEntry;
-
   private count: number;
 
-  ngOnInit() {
+  public ngOnInit() {
     this.count = this.entry.count;
   }
 
   private onInput(e: Event): void {
     const count = parseFloat((e.target as HTMLInputElement).value);
-
     if (!count && count !== 0) {
       this.count = this.entry.count;
     } else {
       this.cart.setQuantity(this.entry.item, count);
     }
   }
-
 }

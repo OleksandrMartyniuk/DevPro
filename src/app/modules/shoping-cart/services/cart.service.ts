@@ -15,7 +15,7 @@ export class CartService {
 
     public onStoreChange: EventEmitter<CartStorage> = new EventEmitter();
 
-    private handleStorageUpdate() {
+    private handleStorageUpdate(): void {
         this.onStoreChange.next(this.store.getState());
     }
 

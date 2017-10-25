@@ -9,14 +9,13 @@ import { CartStorage } from '../../storage/cart-storage';
   styleUrls: ['./cart-view.component.css']
 })
 export class CartViewComponent implements OnInit {
-
   constructor(private cart: CartService, private cdr: ChangeDetectorRef) {
   }
 
   public entries: Array<CartEntry>;
   public summary: number;
 
-  ngOnInit() {
+  public ngOnInit(): void {
     this.cart.onStoreChange.subscribe(this.onStoreUpdated.bind(this));
   }
 

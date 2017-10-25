@@ -5,6 +5,5 @@ import * as CartActions from './actions';
 
 export class CartAction {
     constructor(public type: string, public data: CartData) {
-
     }
 }

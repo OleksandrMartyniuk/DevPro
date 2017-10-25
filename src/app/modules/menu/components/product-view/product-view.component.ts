@@ -16,12 +16,11 @@ export class ProductViewComponent implements OnInit {
   @Input()
   public products: Product[];
 
-  ngOnInit() {
+  public ngOnInit() {
     this.route.data.subscribe((data) => this.getProducts(data.category));
   }
 
-  getProducts(cat: string): void {
-    console.log(cat);
+  public getProducts(cat: string): void {
     this.menu.getProductCategoryData(cat)
       .subscribe((value: ProductCategory): void => {
         this.products = value.products;
