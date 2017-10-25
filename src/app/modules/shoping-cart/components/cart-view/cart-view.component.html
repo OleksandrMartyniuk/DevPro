@@ -1,0 +1,11 @@
+<div class="app-container">
+  <div class="app-header"> Cart </div>
+  <div class="entry-list">
+    <div *ngFor="let item of entries">
+      <app-cart-entry [entry]="item"></app-cart-entry>
+    </div>
+  </div>
+  <div class="checkout-container">
+    <app-checkout></app-checkout>
+  </div>
+</div>

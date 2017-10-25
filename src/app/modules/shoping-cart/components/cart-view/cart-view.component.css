@@ -1,0 +1,27 @@
+.app-container {
+    height: 600px;
+    width: 350px;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #2e2e2e;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+}
+
+.checkout-container {
+    margin-top: auto;
+    background-color: #d4d4d4;
+    border-top: 1px solid #2e2e2e;
+}
+
+.entry-list {
+    margin: 0;
+}
+
+.app-header {
+    background-color: #d4d4d4;
+    border-bottom: 1px solid #2e2e2e;
+    text-align: center;
+    padding: 16px;
+}

@@ -1,0 +1,16 @@
+<div class="app-container">
+  <app-cart-summary></app-cart-summary>
+  <button (click)="checkoutModal.open()">Checkout</button>
+</div>
+<modal #checkoutModal title="Checkout" cancelButtonLabel="Cancel" submitButtonLabel="Pay" modalClass="modal-lg modal-sm any-other-css-class"
+[hideCloseButton]="true" [closeOnEscape]="false" [closeOnOutsideClick]="false" (onSubmit)="actionOnSubmit()">
+
+<modal-header>
+    Please, confirm your order
+</modal-header>
+
+<modal-content>
+  Your order summary is <app-cart-summary></app-cart-summary>
+</modal-content>
+
+</modal>

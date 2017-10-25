@@ -1,0 +1,39 @@
+.app-container {
+    height: 600px;
+    width: 900px;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #2e2e2e;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+.app-header {
+    background-color: #d4d4d4;
+    border-bottom: 1px solid #2e2e2e;
+    display: flex;
+    justify-content: space-around;
+}
+
+.app-header > div {
+    text-align: center;
+    padding: 16px;
+    display: flex;
+    flex: auto;
+}
+
+.app-header > div:hover {
+    background-color: #c0c0c0;
+}
+
+.app-header > div > span {
+    flex: auto;
+    color: black;
+    margin: auto;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #a7a7a7;
+}
