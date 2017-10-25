@@ -1,0 +1,23 @@
+.app-container {
+    display: flex;
+    flex-flow: row;
+    margin: 5px 10px;
+}
+
+.entry-name {
+    padding-top: 2px;
+    display: flex;
+    flex: 1 1 60%;
+}
+
+.entry-price {
+    padding-top: 2px;
+    display: flex;
+    flex: 1 1 20%;
+}
+
+.entry-count input {
+    width: 40px;
+    display: flex;
+    flex: 1 1 20%;
+}

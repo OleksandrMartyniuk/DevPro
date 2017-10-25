@@ -1,0 +1,15 @@
+.checkout-container {
+    margin-top: auto;
+    background-color: #d4d4d4;
+    border-top: 1px solid #2e2e2e;
+}
+
+.product-list {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-wrapper {
+    margin: 10px
+}

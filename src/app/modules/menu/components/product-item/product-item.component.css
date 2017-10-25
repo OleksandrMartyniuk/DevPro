@@ -1,0 +1,33 @@
+.prod-image {
+    background: url('/assets/food_pics/default.png');
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+}
+
+:host {
+    display: inline-block;
+}
+
+.prod-container {
+    background-color: #c4c4c4;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.prod-container:hover {
+    background-color: #ebebeb;
+}
+
+.prod-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.prod-price {
+    font-weight: 500;
+}
+
+.prod-descr {
+    margin: 4px 4px 0 4px;
+}

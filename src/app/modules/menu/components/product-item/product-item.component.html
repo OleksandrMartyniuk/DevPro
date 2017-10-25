@@ -1,0 +1,7 @@
+<div class="prod-container">
+  <div class="prod-image" [style.background]="getImgUrl()"></div>
+  <div class="prod-descr">
+    <div class="prod-name">{{prod.name}}</div>
+    <div class="prod-price">{{prod.price |  currency:'USD':true:'1.2-2'}}</div>
+  </div>
+</div>

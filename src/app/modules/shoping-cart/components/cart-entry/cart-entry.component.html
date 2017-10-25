@@ -1,0 +1,11 @@
+<div class="app-container">
+  <div class="entry-name">
+      {{entry.item.name}}
+  </div>
+  <div class="entry-price">
+      {{entry.item.price | currency:'USD':true:'1.2-2'}}
+  </div>
+  <div class="entry-count">
+    <input type="number" [value]="count" (input)="onInput($event)">
+  </div>
+</div>
